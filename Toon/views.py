@@ -1,16 +1,20 @@
 from django.shortcuts import render
 
-from Toon.models import Gaji_Post
+from Toon.models import Post
 
 
 # Create your views here.
 
 
 
-def Gaji_index(request):
-    posts = Gaji_Post.objects.all()
+def index(request):
+    posts = Post.objects.all()
     #categories = Gaji_Category.objects.all()
-    return render(request,'Toon/index.html',
+    return render(request,'Toon/Toon_index.html',
                   context={'posts':posts})
 
 
+def detail(request, pk):
+    post = Post.objects.get(pk=pk)
+    return render(request,'Toon/Toon_detail.html',
+                  context={'post':post})

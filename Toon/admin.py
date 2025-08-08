@@ -2,6 +2,6 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Gaji_Post
+from .models import Post
 
-admin.site.register(Gaji_Post)
+admin.site.register(Post)

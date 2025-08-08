@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 
-class Gaji_Post(models.Model):
+class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -20,7 +20,7 @@ class Gaji_Post(models.Model):
 
 
 
-# class Gaji_Category(models.Model):
+# class Category(models.Model):
 #     name = models.CharField(max_length=100)
 #     slug = models.SlugField(max_length=100, unique=True, allow_unicode=True)
 #
@@ -33,7 +33,7 @@ class Gaji_Post(models.Model):
 #
 #
 #
-# class Gaji_coomment(models.Model):
+# class coomment(models.Model):
 #     post = models.ForeignKey(Gaji_Post, on_delete=models.CASCADE)
 #     author = models.ForeignKey(User, on_delete=models.CASCADE)
 #     content = models.TextField()
