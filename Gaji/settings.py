@@ -38,7 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Movie',
+<<<<<<< HEAD
     'Tools',
+=======
+    'Toon',
+
+>>>>>>> e7c564e9da350e2515dc16bc5ead822e73c87cf5
 ]
 
 MIDDLEWARE = [
@@ -106,11 +111,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/seoul'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
