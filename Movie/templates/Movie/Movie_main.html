@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Movie_main</title>
 
 
 
@@ -40,7 +40,7 @@
             </div>
         </nav>
 
-
+<!--헤더-->
         <!-- Header-->
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">
@@ -62,7 +62,9 @@
                     <div class="card h-100">
                         <!-- Product image-->
                         {% if post.uploaded_image %}
-                            <img class="card-img-top" src="{{ post.uploaded_image.url }}" alt="{{ post.title }}" style="height: 330px; object-fit: cover;"/>
+                            <a href="{% url 'Movie_detail' post.id %}"><!--여기에 detail주소 입력-->
+                                <img class="card-img-top" src="{{ post.uploaded_image.url }}" style="height: 330px; object-fit: cover;" alt="{{ post.title }}" /> <!--post 이미지-->
+                            </a>
                         {% else %}
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" />
                         {% endif %}
