@@ -38,10 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Movie',
-<<<<<<< HEAD
     'Toon',
-=======
->>>>>>> b5531ecfb72873d9f50ac54ca530161a210e8cb2
+
 ]
 
 MIDDLEWARE = [
