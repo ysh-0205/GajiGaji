@@ -95,22 +95,22 @@
 #### 드라마  
 드라마 작품 목록과 썸네일, 간단한 정보가 표시됩니다.
 
-![드라마 페이지](docs/images/drama_page.png)
+![드라마 페이지](_media/images/드라마 메인.png)
 
 #### 영화  
 영화 목록과 검색, 리뷰 작성 기능을 포함하고 있습니다.
 
-![영화 페이지](docs/images/movie_page.png)
+![영화 페이지](_media/images/영화 메인.png)
 
 #### 책  
 책 목록과 썸네일, 작품 정보가 표시됩니다.
 
-![책 페이지](docs/images/book_page.png)
+![책 페이지]_media/images/책 메인.png)
 
 #### 웹툰  
 웹툰 목록과 검색, 리뷰 작성 기능이 포함되어 있습니다.
 
-![웹툰 페이지](docs/images/webtoon_page.png)
+![웹툰 페이지](_media/images/웹툰 메인.png)
 
 ---
 
