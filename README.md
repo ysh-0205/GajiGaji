@@ -82,7 +82,7 @@
 ---
 
 ## 🎥 프로젝트 시연영상
-[![YouTube 아이콘](https://youtu.be/-Icd-urlrmk)
+[![YouTube 아이콘](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/-Icd-urlrmk)
 
 
 
