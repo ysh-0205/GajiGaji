@@ -98,27 +98,28 @@
 
 ---
 
+
 ### 2. 장르별 메인 페이지
 
 #### 드라마  
 드라마 작품 목록과 썸네일, 간단한 정보가 표시됩니다.
 
-![드라마 페이지](_media/images/드라마메인.png)
+![드라마 페이지](_media/images/drama-main.png)
 
 #### 영화  
 영화 목록과 검색, 리뷰 작성 기능을 포함하고 있습니다.
 
-![영화 페이지](_media/images/영화메인.png)
+![영화 페이지](_media/images/movie-main.png)
 
 #### 책  
 책 목록과 썸네일, 작품 정보가 표시됩니다.
 
-![책 페이지](_media/images/책메인.png)
+![책 페이지](_media/images/book-main.png)
 
 #### 웹툰  
 웹툰 목록과 검색, 리뷰 작성 기능이 포함되어 있습니다.
 
-![웹툰 페이지](_media/images/웹툰메인.png)
+![웹툰 페이지](_media/images/Toon-main.png)
 
 ---
 
@@ -127,20 +128,21 @@
 #### 드라마 상세 페이지  
 작품 상세 설명, 하이라이트 이미지, 댓글 작성 기능 등이 있습니다.
 
-![드라마 상세페이지](_media/images/드라마상세.png)
+![드라마 상세페이지](_media/images/drama-detail.png)
 
 #### 영화 상세 페이지  
 작품 상세 설명과 하이라이트 이미지, 댓글 기능이 포함되어 있습니다.
 
-![영화 상세페이지](_media/images/영화상세.png)
+![영화 상세페이지](_media/images/movie-detail.png)
 
 #### 책 상세 페이지  
 작품 상세 정보와 하이라이트 이미지, 댓글 기능이 제공됩니다.
 
-![책 상세페이지](_media/images/책상세.png)
+![책 상세페이지](_media/images/book-detail.png)
 
 #### 웹툰 상세 페이지  
 작품 설명, 하이라이트 이미지, 댓글 작성 기능 등이 있습니다.
 
-![웹툰 상세페이지](_media/images/웹툰상세.png)
+![웹툰 상세페이지](_media/images/toon-detail.png)
+
 
