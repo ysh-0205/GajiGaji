@@ -1,0 +1,13 @@
+<h1>드라마 목록</h1>
+<ul>
+    {% for drama in dramas %}
+        <li>
+            <img src="{{ drama.image.url }}" alt="{{ drama.title }}" style="max-width:150px;">
+            <h3>{{ drama.title }}</h3>
+            <p>{{ drama.description|truncatechars:50 }}</p>
+           <a href="{% url 'drama_detail' drama.id %}">자세히 보기</a>
+        </li>
+    {% empty %}
+        <li>등록된 드라마가 없습니다.</li>
+    {% endfor %}
+</ul>

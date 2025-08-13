@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>comment update form</title>
+</head>
+<body>
+<h1> post update form 페이지</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table>
+          {{ form }}
+           <tr>
+              <th><label for="id_tags_str">Tags:</label></th>
+              <td><input type="text" name="tags_str" id="id_tags_str" value="{{ tags_str_default }}"></td>
+           </tr>
+        </table>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary mb-3">submit</button>
+        </div>
+    </form>
+</body>
+</html>

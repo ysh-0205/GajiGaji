@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ drama.title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-4">
+    <h1>{{ drama.title }}</h1>
+    <img src="{% static 'images/' %}{{ drama.image }}" class="img-fluid mb-3">
+    <p>{{ drama.description }}</p>
+
+    <hr>
+    <h4>댓글</h4>
+    <ul class="list-group mb-3">
+        {% for comment in comments %}
+            <li class="list-group-item">{{ comment.text }} <small class="text-muted">- {{ comment.created_at }}</small></li>
+        {% empty %}
+            <li class="list-group-item">아직 댓글이 없습니다.</li>
+        {% endfor %}
+    </ul>
+
+    <!-- 댓글 작성 폼 -->
+    <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <textarea name="comment" class="form-control" placeholder="댓글을 입력하세요" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">댓글 작성</button>
+    </form>
+
+    <a href="{% url 'Drama_main' %}" class="btn btn-secondary mt-3">뒤로가기</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{% extends 'Book/base2.html' %}
+
+{% block title-block %}
+<div class="container mt-3">
+ <header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center my-5">
+                {{ post.title }}
+        </div>
+    </div>
+</header>
+</div>
+{% endblock %}
+
+{% block main-area %}
+<div class="container mt-3">
+    <article class="mb-5">
+        <header class="mb-4">
+            <h1 class="fw-bolder mb-1">{{ post.title }}</h1>
+            <div class="text-muted fst-italic mb-2">
+                Posted on {{ post.created_at|date:"F d, Y" }} by {{ post.author }}
+            </div>
+        </header>
+
+        <section class="mb-4">
+            {% if post.uploaded_image %}
+                <img src="{{ post.uploaded_image.url }}" class="img-fluid rounded" alt="{{ post.title }} head image">
+            {% else %}
+                <img src="https://picsum.photos/seed/{{ post.pk }}/600/200" class="img-fluid rounded" alt="Random image for {{ post.title }}">
+            {% endif %}
+
+            {% if post.file_upload %}
+                <div class="mt-3">
+                    <a href="{{ post.file_upload.url }}" class="btn btn-primary" download>
+                        <i class="bi bi-download"></i> 파일 다운로드
+                    </a>
+                </div>
+            {% endif %}
+        </section>
+
+        <section class="lead mb-4">
+            {{ post.content | safe }}
+        </section>
+
+    </article>
+</div>
+{% endblock %}
+{% block writing %}
+{% endblock %}

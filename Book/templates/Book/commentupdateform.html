@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>post update form</title>
+</head>
+<body>
+<h1> post update form 페이지</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3">
+          {{ comment_form }}
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary mb-3">submit</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+a {
+  text-decoration: none;
+  color: #007bff; /* Bootstrap-style blue */
+}
+a:hover {
+  text-decoration: underline; /* Optional: show underline on hover */
+}
+
